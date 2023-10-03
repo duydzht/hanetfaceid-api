@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hanets",
+  "info": {
+    "singularName": "hanet",
+    "pluralName": "hanets",
+    "displayName": "Hanet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "json"
+    }
+  }
+}

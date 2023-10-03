@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checkins",
+  "info": {
+    "singularName": "checkin",
+    "pluralName": "checkins",
+    "displayName": "Checkin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aliasID": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "detected_image_url": {
+      "type": "string"
+    },
+    "deviceID": {
+      "type": "string"
+    },
+    "deviceName": {
+      "type": "string"
+    },
+    "recordID": {
+      "type": "string"
+    },
+    "personID": {
+      "type": "string"
+    },
+    "personName": {
+      "type": "string"
+    },
+    "personTitle": {
+      "type": "string"
+    },
+    "personType": {
+      "type": "string"
+    },
+    "placeID": {
+      "type": "string"
+    },
+    "placeName": {
+      "type": "string"
+    },
+    "mask": {
+      "type": "integer"
+    },
+    "time": {
+      "type": "biginteger"
+    },
+    "face": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::face.face",
+      "inversedBy": "checkins"
+    }
+  }
+}

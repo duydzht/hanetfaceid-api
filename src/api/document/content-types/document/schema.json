@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "documents",
+  "info": {
+    "singularName": "document",
+    "pluralName": "documents",
+    "displayName": "Documents",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "thumb": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "GUEST",
+        "DELEGATE",
+        "ALL"
+      ]
+    },
+    "no": {
+      "type": "integer",
+      "unique": true,
+      "default": 1,
+      "required": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

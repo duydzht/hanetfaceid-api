@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "folders",
+  "info": {
+    "singularName": "folder",
+    "pluralName": "folders",
+    "displayName": "Folder",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "folders": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::folder.folder",
+      "mappedBy": "folder"
+    },
+    "folder": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::folder.folder",
+      "inversedBy": "folders"
+    }
+  }
+}

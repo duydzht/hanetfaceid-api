@@ -1,0 +1,115 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faces",
+  "info": {
+    "singularName": "face",
+    "pluralName": "faces",
+    "displayName": "Face",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "Nam",
+        "Nữ"
+      ],
+      "required": true
+    },
+    "ethnic": {
+      "type": "string",
+      "required": false
+    },
+    "quequan": {
+      "type": "text"
+    },
+    "noiohientai": {
+      "type": "text"
+    },
+    "note": {
+      "type": "text"
+    },
+    "sync": {
+      "type": "boolean",
+      "default": false
+    },
+    "personID": {
+      "type": "string"
+    },
+    "bod": {
+      "type": "string",
+      "required": false
+    },
+    "ngayvaodang": {
+      "type": "string"
+    },
+    "ngayvaodoan": {
+      "type": "string"
+    },
+    "phanloai": {
+      "type": "enumeration",
+      "enum": [
+        "HUYỆN CHIÊM HÓA",
+        "CÔNG AN TỈNH",
+        "HUYỆN HÀM YÊN",
+        "HUYỆN LÂM BÌNH",
+        "HUYỆN NA HANG",
+        "HUYỆN SƠN DƯƠNG",
+        "KHỐI CÁC CƠ QUAN VÀ DOANH NGHIỆP TỈNH",
+        "QUÂN ĐỘI",
+        "HUYỆN YÊN SƠN",
+        "THÀNH ĐOÀN TUYÊN QUANG",
+        "CƠ QUAN TỈNH ĐOÀN"
+      ],
+      "required": true
+    },
+    "donvi": {
+      "type": "string",
+      "required": true
+    },
+    "checkins": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::checkin.checkin",
+      "mappedBy": "face"
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 10,
+      "minLength": 10,
+      "regex": "^0([0-9]{9})$",
+      "unique": true
+    },
+    "stt": {
+      "unique": false,
+      "default": 1,
+      "type": "integer"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

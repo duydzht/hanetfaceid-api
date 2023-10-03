@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "discussions",
+  "info": {
+    "singularName": "discussion",
+    "pluralName": "discussions",
+    "displayName": "Discussions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "thumb": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "no": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "ALL",
+        "THAMDINH",
+        "SBN"
+      ],
+      "required": true
+    }
+  }
+}
