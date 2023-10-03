@@ -24,6 +24,7 @@ module.exports = {
             "http://localhost:1340",
             "http://localhost:19006",
             "https://tuyenquang.daihoidoan.net",
+            "http://103.143.142.67:1340"
           ],
           methods: ["GET", "POST"],
         },
