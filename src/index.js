@@ -21,10 +21,10 @@ module.exports = {
       var io = require("socket.io")(strapi.server.httpServer, {
         cors: {
           origin: [
-            "http://localhost:1340",
             "http://localhost:19006",
-            "https://tuyenquang.daihoidoan.net",
-            "http://103.143.142.67:1340"
+            "http://103.143.142.67:19006",
+            "https://checkin.notipay.vn",
+            "http://103.143.142.67:1340",
           ],
           methods: ["GET", "POST"],
         },
