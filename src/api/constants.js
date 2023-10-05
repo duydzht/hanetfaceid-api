@@ -7,7 +7,7 @@ const HANET_REFRESH_TOKEN =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQwOTM4NzExMzE2NTczNjU4MDgiLCJlbWFpbCI6Im5hdHVhbi5vcmdAZ21haWwuY29tIiwiY2xpZW50X2lkIjoiMDgxZmVmMDNhMWZhODRkMzA0NzRmMmZlOWI5YjExMjciLCJ0eXBlIjoicmVmcmVzaF90b2tlbiIsImlhdCI6MTY1ODIyNjkzOCwiZXhwIjoxNjYwODE4OTM4fQ.uWj-fNX6rxqgzcleexQ3ze1YnhyHcAbzsGDjXLStSZI";
 
 const BASE_URL = PROD
-  ? "https://qltuyenquang.daihoidoan.net"
+  ? "https://socket.notipay.vn"
   : "http://localhost:1340";
 
 const PLACE_ID = "11497";

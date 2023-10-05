@@ -22,9 +22,8 @@ module.exports = {
         cors: {
           origin: [
             "http://localhost:19006",
-            "http://103.143.142.67:19006",
             "https://checkin.notipay.vn",
-            "http://103.143.142.67:1340",
+            "https://socket.notipay.vn",
           ],
           methods: ["GET", "POST"],
         },
