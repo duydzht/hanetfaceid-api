@@ -22,19 +22,19 @@ module.exports = {
         cors: {
           origin: [
             "http://localhost:19006",
-            "https://checkin.notipay.vn",
-            "https://socket.notipay.vn",
+            "https://checkin.dtcsolution.vn",
+            "https://checkin-webhook.dtcsolution.vn",
           ],
           methods: ["GET", "POST"],
         },
       });
       io.on("connection", async function (socket) {
-        console.log(`a user connected`);
+        console.log(`Socket user connected`);
         // send message on user connection
         socket.emit("hello", "hello");
         // listen for user diconnect
         socket.on("disconnect", () => {
-          console.log("a user disconnected");
+          console.log("Socket user disconnected");
         });
       });
       strapi.io = io;
