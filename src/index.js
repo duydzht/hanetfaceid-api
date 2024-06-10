@@ -18,14 +18,20 @@ module.exports = {
    */
   bootstrap(/*{ strapi }*/) {
     process.nextTick(() => {
+      // var io = require("socket.io")(strapi.server.httpServer, {
+      //   cors: {
+      //     origin: [
+      //       "http://localhost:19006",
+      //       "https://checkin.dtcsolution.vn",
+      //       "https://checkin-webhook.dtcsolution.vn",
+      //     ],
+      //     methods: ["GET", "POST"],
+      //   },
+      // });
       var io = require("socket.io")(strapi.server.httpServer, {
         cors: {
-          origin: [
-            "http://localhost:19006",
-            "https://checkin.dtcsolution.vn",
-            "https://checkin-webhook.dtcsolution.vn",
-          ],
-          methods: ["GET", "POST"],
+          origin: "*", // Allow all origins
+          methods: ["GET", "POST"], // Allow all methods
         },
       });
       io.on("connection", async function (socket) {
