@@ -37,7 +37,7 @@
         "Nam",
         "Nữ"
       ],
-      "required": true
+      "required": false
     },
     "ethnic": {
       "type": "string",
@@ -88,7 +88,7 @@
     },
     "donvi": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "checkins": {
       "type": "relation",
