@@ -12,7 +12,7 @@ module.exports = [
       jsonLimit: '10mb',  // Đặt giới hạn JSON
       textLimit: '10mb',  // Đặt giới hạn text
       formidable: {
-        maxFileSize: 100 * 1024 * 1024,
+        maxFileSize: 100 * 2048 * 2048,
       },
     },
   },
