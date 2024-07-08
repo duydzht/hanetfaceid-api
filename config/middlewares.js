@@ -8,6 +8,9 @@ module.exports = [
   {
     name: "strapi::body",
     config: {
+      formLimit: '10mb',  // Đặt giới hạn form
+      jsonLimit: '10mb',  // Đặt giới hạn JSON
+      textLimit: '10mb',  // Đặt giới hạn text
       formidable: {
         maxFileSize: 100 * 1024 * 1024,
       },
