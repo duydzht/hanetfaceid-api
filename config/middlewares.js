@@ -1,6 +1,17 @@
 module.exports = [
   "strapi::errors",
-  "strapi::security",
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        useDefaults: true,
+        directives: {
+          "default-src": ["'self'"],
+          "frame-ancestors": ["'self'", "http://localhost:*", "checkin.dtcsolution.vn"], // Thay "yourdomain.com" bằng tên miền của bạn
+        },
+      },
+    },
+  },
   "strapi::cors",
   "strapi::poweredBy",
   "strapi::logger",
