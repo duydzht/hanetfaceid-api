@@ -7,7 +7,7 @@ module.exports = [
         useDefaults: true,
         directives: {
           "default-src": ["'self'"],
-          "frame-ancestors": ["'self'", "http://localhost:*", "checkin.dtcsolution.vn"], // Thay "yourdomain.com" bằng tên miền của bạn
+          "frame-ancestors": ["'self'", "http://localhost:*", "https://checkin.dtcsolution.vn"], // Thay "yourdomain.com" bằng tên miền của bạn
         },
       },
     },
