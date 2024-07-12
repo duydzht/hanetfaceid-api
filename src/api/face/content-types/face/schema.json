@@ -84,7 +84,7 @@
         "THÀNH ĐOÀN TUYÊN QUANG",
         "CƠ QUAN TỈNH ĐOÀN"
       ],
-      "required": true
+      "required": false
     },
     "donvi": {
       "type": "string",
